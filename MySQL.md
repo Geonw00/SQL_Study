@@ -130,13 +130,13 @@ SELECT
     _ : 한 문자 의미
     % : 모든 문자 의미
     
-    - SELECT 열 이름 FROM 테이블 이름 WHERE LIKE 조건
+    - SELECT 열 이름 FROM 테이블 이름 WHERE 특정 열 이름 LIKE 조건
     
     EX) 두 번째 단어부터 MOUSE가 포함되는 데이터 조회할 경우
-    - SELECT 열 이름 FROM 테이블 이름 WHERE LIKE '_MOUSE'
+    - SELECT 열 이름 FROM 테이블 이름 WHERE 특정 열 이름 LIKE '_MOUSE'
     
     EX) 단어위치 상관없이 MOUSE가 포함되는 데이터 조회할 경우
-    - SELECT 열 이름 FROM 테이블 이름 WHERE LIKE '%MOUSE%'
+    - SELECT 열 이름 FROM 테이블 이름 WHERE 특정 열 이름 LIKE '%MOUSE%'
 ```
 
 JOIN
