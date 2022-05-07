@@ -124,3 +124,29 @@ SELECT
       UNION ALL
       SELECT HOUR+1 FROM REC WHERE HOUR < 23)
 ```
+
+JOIN
+-------------
+- LEFT JOIN (좌측 테이블을 기준으로 JOIN 실행 => 우측 테이블 값이 NULL일 경우 NULL 상태로 붙음)
+```
+    - SELECT 열 이름 FROM 좌측 테이블명 LEFT JOIN 우측 테이블명 ON 테이블 간의 연결조건
+```
+
+- RIGHT JOIN (우측 테이블을 기준으로 JOIN 실행 => 좌측 테이블 값이 NULL일 경우 NULL 상태로 붙음)
+```
+    - SELECT 열 이름 FROM 좌측 테이블명 RIGHT JOIN 우측 테이블명 ON 테이블 간의 연결조건
+```
+
+- INNER JOIN (양 테이블 모두 데이터가 존재할 경우만 JOIN)
+```
+    - SELECT 열 이름 FROM 좌측 테이블명 JOIN 우측 테이블명 ON 테이블 간의 연결조건
+    - SELECT 열 이름 FROM 좌측 테이블명 INNER JOIN 우측 테이블명 ON 테이블 간의 연결조건
+    - SELECT 열 이름 FROM 좌측 테이블명 JOIN 우측 테이블명 WHERE 테이블 간의 연결조건
+```
+
+- JOIN시 특정 테이블의 특정 열 조회
+```
+    - SELECT 테이블 명.열 이름 FROM 좌측 테이블명 JOIN 우측 테이블명 ON 테이블 간의 연결조건
+    
+    AS를 통해 테이블명을 쉽게 재지정하여 사용하면 편함
+```
