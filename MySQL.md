@@ -125,6 +125,20 @@ SELECT
       SELECT HOUR+1 FROM REC WHERE HOUR < 23)
 ```
 
+- LIKE문 사용
+```
+    _ : 한 문자 의미
+    % : 모든 문자 의미
+    
+    - SELECT 열 이름 FROM 테이블 이름 WHERE LIKE 조건
+    
+    EX) 두 번째 단어부터 MOUSE가 포함되는 데이터 조회할 경우
+    - SELECT 열 이름 FROM 테이블 이름 WHERE LIKE '_MOUSE'
+    
+    EX) 단어위치 상관없이 MOUSE가 포함되는 데이터 조회할 경우
+    - SELECT 열 이름 FROM 테이블 이름 WHERE LIKE '%MOUSE%'
+```
+
 JOIN
 -------------
 - LEFT JOIN (좌측 테이블을 기준으로 JOIN 실행 => 우측 테이블 값이 NULL일 경우 NULL 상태로 붙음)
