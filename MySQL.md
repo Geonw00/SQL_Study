@@ -106,9 +106,13 @@ SELECT
     HOUR : 시
     MINUTE : 분
     SECOND : 초
+    DATE_FORMAT : 날짜형식 조절 가능
     
     EX) 기준 날짜형식에서 월만 시간만 추출하여 출력할 경우
-    - SELECT HOUR(열 이름) FROM 테이블 이름 
+    - SELECT HOUR(열 이름) FROM 테이블 이름
+    
+    EX) YYYY-MM-DD만 출력하고 싶을 경우
+    - SELECT DATE_FORMAT(열 이름, '%Y-%m-%d') FROM 테이블 이름
 ```
 
 - 가상의 테이블 생성
