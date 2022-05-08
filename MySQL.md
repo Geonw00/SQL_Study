@@ -168,3 +168,12 @@ JOIN
     
     AS를 통해 테이블명을 쉽게 재지정하여 사용하면 편함
 ```
+
+- 셀프 JOIN
+```
+    EX) INNER JOIN으로 셀프조인을 진행할 경우
+    - SELECT 열 이름 FROM 테이블명 테이블 별칭1 JOIN 테이블명 테이블 별칭2 ON 테이블 간의 연결조건
+    
+    EX) LEFT JOIN으로 셀프조인을 진행할 경우(RIGHT도 방식은 동일)
+    - SELECT 열 이름 FROM 테이블명 테이블 별칭1 LEFT JOIN 테이블명 테이블 별칭2 ON 테이블 간의 연결조건
+```
